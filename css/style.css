@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; outline: none; }
+
+.wrapper { max-width: 1260px; display: block; margin: 0 auto; }
+
+.container { width: 940px; padding: 0 160px; }
+
+.header { height: 650px; background-color: rgb(78, 172, 221); }
+
+.header .header-first { display: flex; justify-content: space-between; padding: 0 0 60px 0; position: relative; }
+
+.header .header-first .logo { position: relative; font-family: 'Kaushan Script', cursive; font-size: 50px; color: #0da9e5; background-color: rgb(255, 255, 255); width: 100px; height: 100px; z-index: 36; text-align: center; }
+.header .header-first .logo:after { content: ''; position: absolute; background-color: rgb(13, 169, 229); opacity: 0.702; left: 14px; top: 15px; width: 100px; height: 100px; z-index: 35; }
+
+.header .header-first .menu { width: 30px; height: 4px; background-color:rgb(255, 255, 255); margin-top: 40px; margin-bottom: 2px; border-radius: 2px; }
+
+.header .header-second { text-align: right; color: #fff; font-size: 35px; line-height: 40px; }
+
+.header .header-second .text-1 { display: block; font-size: 70px; line-height: 74px; padding-bottom: 50px; }
+
+.header .header-second .button { font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border: 2px solid #fff; border-radius: 2px; max-width: 168px; width: 100%; box-sizing: border-box; position: relative; }
+
+.header .header-second .button:after { content: ''; position: absolute; background: url(images/icon.png) no-repeat 0 0; width: 16px; height: 12px; top: 22px; right: 29px; }
+ 
+
+.header .header-third {  }
+
+
+
+
+
