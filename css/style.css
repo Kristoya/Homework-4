@@ -4,7 +4,7 @@
 
 .container { width: 940px; padding: 0 160px; }
 
-.header { height: 650px; background: url(images/pattern.png); background-repeat: repeat; }
+.header { background: url(images/pattern.png); background-repeat: repeat; }
 
 .header .header-first { display: flex; justify-content: space-between; padding: 0 0 60px 0; position: relative; }
 
@@ -18,11 +18,23 @@
 
 .header .header-second { color: #fff; font-size: 35px; line-height: 40px; display: flex; flex-direction: column; align-items: flex-end; position: relative; }
 
-.header .header-second:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: -204px; left: 80px;  }
+.header .header-second:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: 0; left: 80px;  }
 
 .header .header-second .text-1 { display: block; font-size: 70px; line-height: 74px; padding-bottom: 50px; }
 
-.header .header-second .button { margin-top: 56px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border: 2px solid #fff; border-radius: 2px; max-width: 168px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
+.header .header-second .button { color: #fff; border: 2px solid #fff; margin-top: 56px; margin-bottom: 230px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border-radius: 2px; max-width: 168px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
 
 .header .header-second .button:after { content: ''; position: absolute; background: url(images/icon.png) no-repeat 0 0; width: 16px; height: 12px; top: 22px; left: 123px; }
+
+.main { padding: 140px 0; background-color: #f4f4f4; position: relative; }
+.main:after { content: ''; position: absolute; background: url(images/telephone-yellow.png) no-repeat; width: 338px; height: 499px; bottom: 0; right: 0; } 
+
+
+.main .container p { padding-top: 30px; width: 553px; font-size: 16px; line-height: 26px; }
+
+.main .container .line { position: relative; padding-left: 24px; }
+.main .container .line:before { content: ''; position: absolute; background: url(images/line-blue.png) no-repeat 0 0; width: 6px; height: 68px; top: 34px; left: 0px; }
+
+.main .container .button { color: #14af8f; border: 2px solid #14af8f; margin-top: 70px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 38px; border-radius: 2px; max-width: 170px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
+.main .container .button:after { content: ''; position: absolute; background: url(images/icon-mail.png) no-repeat 0 0; width: 16px; height: 13px; top: 22px; left: 130px; }
  
