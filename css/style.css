@@ -20,7 +20,7 @@
 
 .header .header-second:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: 0; left: 80px;  }
 
-.header .header-second .text-1 { display: block; font-size: 70px; line-height: 74px; padding-bottom: 50px; }
+.header .header-second .text-1 { display: block; font-size: 70px; line-height: 74px; padding-bottom: 50px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
 
 .header .header-second .button { color: #fff; border: 2px solid #fff; margin-top: 56px; margin-bottom: 230px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border-radius: 2px; max-width: 168px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
 
