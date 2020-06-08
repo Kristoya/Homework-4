@@ -1,5 +1,7 @@
 * { margin: 0; padding: 0; outline: none; }
 
+a {text-decoration: none; }
+
 .wrapper { max-width: 1260px; display: block; margin: 0 auto; }
 
 .container { width: 940px; padding: 0 160px; }
@@ -26,15 +28,36 @@
 
 .header .header-second .button:after { content: ''; position: absolute; background: url(images/icon.png) no-repeat 0 0; width: 16px; height: 12px; top: 22px; left: 123px; }
 
-.main { padding: 140px 0; background-color: #f4f4f4; position: relative; }
-.main:after { content: ''; position: absolute; background: url(images/telephone-yellow.png) no-repeat; width: 338px; height: 499px; bottom: 0; right: 0; } 
+/*first box*/
+.main .first-box { padding: 140px 0; background-color: #f4f4f4; position: relative; }
+.main .first-box:after { content: ''; position: absolute; background: url(images/telephone-yellow.png) no-repeat; width: 338px; height: 499px; bottom: 0; right: 0; } 
+.main .first-box .container p { padding-top: 30px; width: 553px; font-size: 16px; line-height: 26px; }
+.main .first-box .container .line { position: relative; padding-left: 24px; }
+.main .first-box .container .line:before { content: ''; position: absolute; background: url(images/line-blue.png) no-repeat 0 0; width: 6px; height: 68px; top: 34px; left: 0px; }
+.main .first-box .container .button { color: #14af8f; border: 2px solid #14af8f; margin-top: 70px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 38px; border-radius: 2px; max-width: 170px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
+.main .first-box .container .button:after { content: ''; position: absolute; background: url(images/icon-mail.png) no-repeat 0 0; width: 16px; height: 13px; top: 22px; left: 130px; }
+
+/*second box*/
+.main .second-box { padding: 105px 0 237px 0; background-color: #ffffff; position: relative; display: flex; flex-direction: row-reverse; }
+.main .second-box:after { content: ''; position: absolute; background: url(images/devices.png) no-repeat; width: 758px; height: 367px; bottom: 0; left: 0; }
+.main .second-box .container { width: 385px; }
+.main .second-box h2 { font-size: 40px; color: #545454; padding-bottom: 38px; }
+.main .second-box p { font-size: 16px; line-height: 25px; color: #7e7e7e; }
+.main .second-box p:nth-child(2){ padding-bottom: 35px; }
+.main .second-box p strong { color: #474e5d; }
+.main .second-box .container .button { color: #ea4c89; border: 2px solid #ea4c89; margin-top: 60px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 40px; border-radius: 2px; max-width: 220px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
+.main .second-box .container .button:after { content: ''; position: absolute; background: url(images/icon-ball.png) no-repeat 0 0; width: 13px; height: 14px; bottom: 23px; right: 16px; }
+
+/*third-box*/
+.main .third-box { padding: 100px 0; background: url(images/green-pattern.jpg); background-repeat: repeat;  }
+
+.main .third-box .container { display: flex; flex-direction: column; align-items: center; }
+
+.main .third-box h2 { color: #fff; font-size: 40px; }
+
+.main .third-box .container .button { color: #fff; border: 2px solid #fff; margin-top: 40px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 35px; border-radius: 2px; max-width: 220px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
+.main .third-box .container .button:after { content: ''; position: absolute; background: url(images/icon-beer.png) no-repeat 0 0; width: 14px; height: 13px; bottom: 23px; right: 36px; }
 
 
-.main .container p { padding-top: 30px; width: 553px; font-size: 16px; line-height: 26px; }
 
-.main .container .line { position: relative; padding-left: 24px; }
-.main .container .line:before { content: ''; position: absolute; background: url(images/line-blue.png) no-repeat 0 0; width: 6px; height: 68px; top: 34px; left: 0px; }
 
-.main .container .button { color: #14af8f; border: 2px solid #14af8f; margin-top: 70px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 38px; border-radius: 2px; max-width: 170px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
-.main .container .button:after { content: ''; position: absolute; background: url(images/icon-mail.png) no-repeat 0 0; width: 16px; height: 13px; top: 22px; left: 130px; }
- 
