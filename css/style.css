@@ -59,5 +59,25 @@ a {text-decoration: none; }
 .main .third-box .container .button:after { content: ''; position: absolute; background: url(images/icon-beer.png) no-repeat 0 0; width: 14px; height: 13px; bottom: 23px; right: 36px; }
 
 
+.social-box { background-color: #f4f4f4; padding: 240px 0; text-align: center; }
+.social-box .icons { display: flex; justify-content: center; }
+
+.social-box .social-icon { width: 50px; height: 50px; display: block; font-size: 0; line-height: 0; text-indent: -100%; background-repeat: no-repeat; background-position: center; border: 2px solid #545454; border-radius: 50%; }
+.social-box .social-icon + .social-icon { margin-left: 34px; margin-bottom: 67px; }
+
+.social-box .social-icon.dribble { background-image: url(images/dribble-icon.png); }
+.social-box .social-icon.fb { background-image: url(images/fb-icon.png); }
+.social-box .social-icon.twitter { background-image: url(images/twitter-icon.png); }
+.social-box .social-icon.mail { background-image: url(images/mail-icon.png); }
+
+.social-box p .ic-email { padding: 17px 123px 17px 20px; background-color: #fff; color: #d3d3d3; font-size: 14px; line-height: 18px; position: relative; border-radius: 10px; margin-left: 25px; }
+.social-box p .ic-email:after { content: ''; background: url(images/icon-email.png) no-repeat center 0; position: absolute; width: 50px; height: 13px; top: 20px; right: 10px; border-left: 1px solid #dcdcdc; }
 
 
+ 
+.footer { background-color: #fff; padding: 50px 0 40px 0; text-align: center; position: relative; }
+
+.footer span {  }
+.footer .up { padding: 15px; background-color: #f4f4f4; color: #000; font-size: 0; line-height: 0; text-indent: -100%; border-radius: 5px; position: absolute; top: 33px; right: 60px; }
+
+.footer .up span{ padding: 3px; border: solid 1px #000; border-left-color: transparent; border-bottom-color: transparent; transform: rotate(-45deg); position: absolute; top: 13px; right: 10px; }
