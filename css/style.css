@@ -6,32 +6,34 @@ a {text-decoration: none; }
 
 .container { width: 940px; padding: 0 160px; }
 
-.header { background: url(images/pattern.png); background-repeat: repeat; }
+/*HEADER*/
 
+.header { background: url(images/pattern.png); background-repeat: repeat; padding: 0 0 230px 0; position: relative; }
+.header:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: 0; left: 230px;  }
+
+/*header-first*/
 .header .header-first { display: flex; justify-content: space-between; padding: 0 0 60px 0; position: relative; }
-
 .header .header-first .logo { position: relative; font-family: 'Kaushan Script', cursive; font-size: 50px; color: #0da9e5; background-color: rgb(255, 255, 255); width: 100px; height: 100px; text-align: center; box-shadow: 14px 11px 0 0 #27b1e6; border-bottom: solid 4px #0da9e5; }
 
 .header .header-first .menu-press { border: 0; background: transparent; width: 30px; height: 4px; background-color: #fff; margin-top: 40px; border-radius: 2px; position: relative; cursor: pointer; }
 .header .header-first .menu-press:after { content: ''; position: absolute; width: 30px; height: 4px; background-color: #fff; bottom: -6px; left: 0; border-radius: 2px; }
-
 .header .header-first .menu-press span { position: absolute; width: 30px; height: 4px; background-color: #fff; bottom: -12px; left: 0; border-radius: 2px; }
 .header .header-first .menu-press span:after { content: ''; position: absolute; width: 30px; height: 4px; background-color: #fff; bottom: -6px; left: 0; border-radius: 2px; }
 
-.header .header-second { color: #fff; font-size: 35px; line-height: 40px; display: flex; flex-direction: column; align-items: flex-end; position: relative; }
-
-.header .header-second:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: 0; left: 80px;  }
-
+/*header-second*/
+.header .header-second { font-family: 'ProximaNovaA'; color: #fff; font-size: 35px; line-height: 40px; display: flex; flex-direction: column; align-items: flex-end; position: relative; }
 .header .header-second .text-1 { display: block; font-size: 70px; line-height: 74px; padding-bottom: 50px; font-family: 'BlackJack'; font-weight: normal; font-style: normal; }
 
-.header .header-second .button { color: #fff; border: 2px solid #fff; margin-top: 56px; margin-bottom: 230px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border-radius: 2px; max-width: 168px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; }
-
+.header .header-second .button { color: #fff; border: 2px solid #fff; margin-top: 56px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 60px 20px 28px; border-radius: 2px; max-width: 168px; /*width: 100%;*/ /*box-sizing: border-box;*/ position: relative; cursor: pointer; display: block; }
 .header .header-second .button:after { content: ''; position: absolute; background: url(images/icon.png) no-repeat 0 0; width: 16px; height: 12px; top: 22px; left: 123px; }
 
 /*first box*/
 .main .first-box { padding: 140px 0; background-color: #f4f4f4; position: relative; }
 .main .first-box:after { content: ''; position: absolute; background: url(images/telephone-yellow.png) no-repeat; width: 338px; height: 499px; bottom: 0; right: 0; } 
-.main .first-box .container p { padding-top: 30px; width: 553px; font-size: 16px; line-height: 26px; }
+
+.main .first-box h2 { font-size: 40px; line-height: 44px; color: #545454; font-family: 'ProximaNovaA-Light'; }
+.main .first-box p { padding-top: 30px; width: 553px; font-size: 16px; line-height: 26px; color: #7e7e7e; font-family: 'ProximaNova-Regular'; }
+
 .main .first-box .container .line { position: relative; padding-left: 24px; }
 .main .first-box .container .line:before { content: ''; position: absolute; background: url(images/line-blue.png) no-repeat 0 0; width: 6px; height: 68px; top: 34px; left: 0px; }
 .main .first-box .container .button { color: #14af8f; border: 2px solid #14af8f; margin-top: 70px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 38px; border-radius: 2px; max-width: 170px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
@@ -41,10 +43,12 @@ a {text-decoration: none; }
 .main .second-box { padding: 105px 0 237px 0; background-color: #ffffff; position: relative; display: flex; flex-direction: row-reverse; }
 .main .second-box:after { content: ''; position: absolute; background: url(images/devices.png) no-repeat; width: 758px; height: 367px; bottom: 0; left: 0; }
 .main .second-box .container { width: 385px; }
-.main .second-box h2 { font-size: 40px; color: #545454; padding-bottom: 38px; }
+
+.main .second-box h2 { font-size: 40px; color: #545454; padding-bottom: 38px; font-family: 'ProximaNovaA-Light'; }
 .main .second-box p { font-size: 16px; line-height: 25px; color: #7e7e7e; }
 .main .second-box p:nth-child(2){ padding-bottom: 35px; }
 .main .second-box p strong { color: #474e5d; }
+
 .main .second-box .container .button { color: #ea4c89; border: 2px solid #ea4c89; margin-top: 60px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 40px; border-radius: 2px; max-width: 220px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
 .main .second-box .container .button:after { content: ''; position: absolute; background: url(images/icon-ball.png) no-repeat 0 0; width: 13px; height: 14px; bottom: 23px; right: 16px; }
 
@@ -53,7 +57,7 @@ a {text-decoration: none; }
 
 .main .third-box .container { display: flex; flex-direction: column; align-items: center; }
 
-.main .third-box h2 { color: #fff; font-size: 40px; }
+.main .third-box h2 { color: #fff; font-size: 40px; font-family: 'ProximaNovaA-Light'}
 
 .main .third-box .container .button { color: #fff; border: 2px solid #fff; margin-top: 40px; font-size: 15px; line-height: 19px; text-transform: uppercase; padding: 20px 0 20px 35px; border-radius: 2px; max-width: 220px; width: 100%; box-sizing: border-box; position: relative; cursor: pointer; display: block; }
 .main .third-box .container .button:after { content: ''; position: absolute; background: url(images/icon-beer.png) no-repeat 0 0; width: 14px; height: 13px; bottom: 23px; right: 36px; }
