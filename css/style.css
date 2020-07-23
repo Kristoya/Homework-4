@@ -13,6 +13,10 @@ a {text-decoration: none; }
 .header { background: url(images/pattern.png); background-repeat: repeat; padding: 0 0 230px 0; position: relative; }
 .header:after { content: ''; position: absolute; background: url(images/telephone.png) no-repeat; width: 229px; height: 268px; bottom: 0; left: 230px;  }
 
+
+.active { padding: 60px; background-color: red; display: block }
+
+
 /*header-first*/
 .header .header-first { display: flex; justify-content: space-between; padding: 0 0 60px 0; position: relative; }
 .header .header-first .logo { position: relative; font-family: 'Kaushan Script', cursive; font-size: 50px; color: #0da9e5; background-color: rgb(255, 255, 255); width: 100px; height: 100px; text-align: center; box-shadow: 14px 11px 0 0 #27b1e6; border-bottom: solid 4px #0da9e5; }
@@ -46,7 +50,7 @@ a {text-decoration: none; }
 
 /*second box*/
 .main .second-box { padding: 105px 0 237px 0; background-color: #ffffff; position: relative; display: flex; flex-direction: row-reverse; }
-.main .second-box:after { content: ''; position: absolute; background: url(images/devices.png) no-repeat; width: 758px; height: 367px; bottom: 0; left: 0; }
+.main .second-box:after { content: ''; position: absolute; background-image: url(images/devices.png); background-repeat: no-repeat; width: 758px; height: 367px; bottom: 0; left: 0; }
 .main .second-box .container { width: 385px; }
 
 .main .second-box h2 { font-size: 40px; color: #545454; padding-bottom: 38px; font-family: 'ProximaNova'; font-weight: 300; font-style: normal;  }
@@ -111,17 +115,48 @@ a {text-decoration: none; }
 
 
 @media only screen and (max-width: 1080px) {
-.main .first-box p { width: 400px; }
-.main .second-box .container {width: 300px; }
-   
+	.main .first-box p { width: 400px; }
+	.main .second-box .container {width: 310px; }
 }
 
 @media only screen and (max-width: 960px) {
     .container { padding: 0px 80px; }
 }
 
-@media only screen and (max-width: 870px) {
-.main .second-box { flex-direction: column; }
-.main .second-box .container { margin-bottom: 160px; }
-.main .first-box:after { bottom: -225px; }
+@media only screen and (max-width: 880px) {
+
+	.main .first-box { padding-bottom: 380px; }
+
+	.main .second-box { flex-direction: column; padding-bottom: 0;  }
+	.main .second-box:after { padding-top: 48%; height: 0; width: 100%; position: static; background-size: contain; }
+	.main .second-box .container { margin-bottom: 50px; }
 }
+
+@media only screen and (max-width: 650px) { 
+	.main .first-box p { width: auto; }
+	.main .first-box .container.media { display: flex; flex-direction: column; align-items: center; align-content: center; }
+	.main .second-box .container { align-items: center; }
+
+	.header { padding-bottom: 300px; }
+	.header .header-second { align-items: center; }
+
+	.main .first-box { padding-bottom: 550px; }
+}
+
+
+@media only screen and (max-width: 470px) {
+	.header:after { left: 70px; }
+	.header .header-second .text-1 { text-align: center; }
+
+	.main .second-box .container { width: auto; }
+
+	.social-box .subscription { flex-direction: column; }
+	.social-box .subscription label { padding-bottom: 20px; }
+	.footer .up { top: 77px; right: 210px; }
+ }
+
+ @media only screen and (max-width: 350px) {
+	.social-box { padding: 70px 0; }
+	.social-box .icons { flex-direction: column; align-items: center; }
+}
+ 
