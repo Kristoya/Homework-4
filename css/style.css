@@ -73,7 +73,7 @@ a {text-decoration: none; }
 
 
 .social-box { background-color: #f4f4f4; padding: 240px 0; text-align: center; }
-.social-box .icons { display: flex; justify-content: center; height: 125px; }
+.social-box .icons { display: flex; justify-content: center; margin-bottom: 100px; }
 
 .social-box .social-icon { width: 50px; height: 50px; display: block; font-size: 0; line-height: 0; text-indent: -100%; background-repeat: no-repeat; background-position: center; border: 2px solid #545454; border-radius: 50%; }
 .social-box .social-icon + .social-icon { margin-left: 34px; }
@@ -98,12 +98,6 @@ a {text-decoration: none; }
 .footer .up { padding: 15px; background-color: #f4f4f4; color: #000; font-size: 0; line-height: 0; text-indent: -100%; border-radius: 5px; position: absolute; top: 33px; right: 60px; }
 
 .footer .up span{ padding: 3px; border: solid 1px #000; border-left-color: transparent; border-bottom-color: transparent; transform: rotate(-45deg); position: absolute; top: 13px; right: 10px; }
-
-
-
-
-
-
 
 
 
@@ -133,14 +127,14 @@ a {text-decoration: none; }
 }
 
 @media only screen and (max-width: 650px) { 
+	.main .first-box { padding-bottom: 550px; display: flex; flex-direction: column; }
+	.main .first-box h2 { text-align: center; }
 	.main .first-box p { width: auto; }
 	.main .first-box .container.media { display: flex; flex-direction: column; align-items: center; align-content: center; }
 	.main .second-box .container { align-items: center; }
 
 	.header { padding-bottom: 300px; }
 	.header .header-second { align-items: center; }
-
-	.main .first-box { padding-bottom: 550px; }
 }
 
 
@@ -152,11 +146,21 @@ a {text-decoration: none; }
 
 	.social-box .subscription { flex-direction: column; }
 	.social-box .subscription label { padding-bottom: 20px; }
-	.footer .up { top: 77px; right: 210px; }
+	.footer .up { top: 75px; }
+
  }
 
  @media only screen and (max-width: 350px) {
-	.social-box { padding: 70px 0; }
-	.social-box .icons { flex-direction: column; align-items: center; }
+	.header { display: flex; flex-direction: column; padding-bottom: 0; }
+	.header:after { padding-top: 85%; height: 0; width: 100%; position: static; background-size: contain; margin-top: 30px; background-position: center 0;}
+
+	.main .first-box { padding-bottom: 0; }
+	.main .first-box:after { padding-top: 67%; height: 0; width: 100%; position: static; background-size: contain; margin-top: 30px; background-position: right 0; }
+
+	.social-box { padding: 110px 0 50px 0; }
+	.social-box .subscription { padding-top: 70px; }
+	.social-box .icons { flex-direction: column; align-items: center; margin-bottom: 0; }
+	.social-box .social-icon { margin-bottom: 15px; }
+	.social-box .social-icon + .social-icon { margin-left: 0; }
 }
- 
+
